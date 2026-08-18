@@ -1,0 +1,620 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /apb_pkg
+=== Design Unit: work.apb_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      8        na        na   100.00%
+        Coverpoints/Crosses         27        na        na        na
+            Covergroup Bins        130       130         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /apb_pkg/apb_coverage/transaction_cg            100.00%        100          -    Covered              
+    covered/total bins:                                     8          8          -                      
+    missing/total bins:                                     0          8          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_dir                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                        4462          1          -    Covered              
+        bin read                                         4460          1          -    Covered              
+    Coverpoint cp_error                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin no_error                                     8826          1          -    Covered              
+        bin error                                          96          1          -    Covered              
+    Cross cx_dir_error                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <read,error>                               48          1          -    Covered              
+            bin <write,error>                              48          1          -    Covered              
+            bin <read,no_error>                          4412          1          -    Covered              
+            bin <write,no_error>                         4414          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/address_cg                100.00%        100          -    Covered              
+    covered/total bins:                                     5          5          -                      
+    missing/total bins:                                     0          5          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_addr                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin addr_zero                                      96          1          -    Covered              
+        bin addr_low                                     2360          1          -    Covered              
+        bin addr_mid                                     4072          1          -    Covered              
+        bin addr_high                                    2298          1          -    Covered              
+        bin addr_max                                       88          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/data_cg                   100.00%        100          -    Covered              
+    covered/total bins:                                    10         10          -                      
+    missing/total bins:                                     0         10          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_wdata                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin data_zero                                      26          1          -    Covered              
+        bin data_low                                      126          1          -    Covered              
+        bin data_mid                                        4          1          -    Covered              
+        bin data_high                                    4280          1          -    Covered              
+        bin data_max                                       26          1          -    Covered              
+    Coverpoint cp_rdata                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin data_zero                                     104          1          -    Covered              
+        bin data_low                                      220          1          -    Covered              
+        bin data_mid                                      260          1          -    Covered              
+        bin data_high                                    3854          1          -    Covered              
+        bin data_max                                       22          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/strobe_cg                 100.00%        100          -    Covered              
+    covered/total bins:                                     9          9          -                      
+    missing/total bins:                                     0          9          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_strb                                100.00%        100          -    Covered              
+        covered/total bins:                                 9          9          -                      
+        missing/total bins:                                 0          9          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin all_bytes                                    2054          1          -    Covered              
+        bin byte_0_only                                   206          1          -    Covered              
+        bin byte_1_only                                   220          1          -    Covered              
+        bin byte_2_only                                   196          1          -    Covered              
+        bin byte_3_only                                   218          1          -    Covered              
+        bin lower_half                                    198          1          -    Covered              
+        bin upper_half                                    290          1          -    Covered              
+        bin upper_3                                       210          1          -    Covered              
+        bin lower_3                                       210          1          -    Covered              
+        default bin others                                660                     -    Occurred             
+ TYPE /apb_pkg/apb_coverage/transition_cg             100.00%        100          -    Covered              
+    covered/total bins:                                     4          4          -                      
+    missing/total bins:                                     0          4          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_dir_trans                           100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/apb_pkg::apb_coverage::transition_cg  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     4          4          -                      
+    missing/total bins:                                     0          4          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_dir_trans                           100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write_then_read                              2432          1          -    Covered              
+        bin read_then_write                              2420          1          -    Covered              
+        bin write_then_write                             2026          1          -    Covered              
+        bin read_then_read                               2026          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/boundary_cg               100.00%        100          -    Covered              
+    covered/total bins:                                    28         28          -                      
+    missing/total bins:                                     0         28          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_addr_boundary                       100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin addr_first                                     96          1          -    Covered              
+        bin addr_second                                    76          1          -    Covered              
+        bin addr_secondlast                                88          1          -    Covered              
+        bin addr_last                                      96          1          -    Covered              
+        default bin addr_everything_else                 8566                     -    Occurred             
+    Coverpoint cp_dir_bnd                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                        4462          1          -    Covered              
+        bin read                                         4460          1          -    Covered              
+    Coverpoint cp_data_pattern                        100.00%        100          -    Covered              
+        covered/total bins:                                 9          9          -                      
+        missing/total bins:                                 0          9          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin all_zeros                                      26          1          -    Covered              
+        bin all_ones                                       26          1          -    Covered              
+        bin alt_a5                                         26          1          -    Covered              
+        bin alt_5a                                         26          1          -    Covered              
+        bin alt_aa                                          2          1          -    Covered              
+        bin alt_55                                          2          1          -    Covered              
+        bin first_1                                        24          1          -    Covered              
+        bin first_2                                        24          1          -    Covered              
+        bin first_4                                        24          1          -    Covered              
+        default bin other_pattern                        4282                     -    Occurred             
+    Coverpoint cp_strb_on_read                        100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin strb_zero_on_read                            4460          1          -    Covered              
+        default bin strb_nonzero_on_read                    0                     -    ZERO                 
+    Coverpoint cp_b2b_same_addr                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin same_addr_hit                                2770          1          -    Covered              
+        bin same_addr_miss                               6152          1          -    Covered              
+    Coverpoint cp_wr_rd_same_addr                     100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin wr_rd_same_hit                               2426          1          -    Covered              
+        bin wr_rd_same_miss                              6496          1          -    Covered              
+    Cross cx_boundary_x_dir                           100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <addr_first,read>                          44          1          -    Covered              
+            bin <addr_first,write>                         52          1          -    Covered              
+            bin <addr_last,read>                           48          1          -    Covered              
+            bin <addr_secondlast,read>                     44          1          -    Covered              
+            bin <addr_second,read>                         38          1          -    Covered              
+            bin <addr_last,write>                          48          1          -    Covered              
+            bin <addr_secondlast,write>                    44          1          -    Covered              
+            bin <addr_second,write>                        38          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/waitstate_cg              100.00%        100          -    Covered              
+    covered/total bins:                                    14         14          -                      
+    missing/total bins:                                     0         14          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_wait_states                         100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero_wait                                    2186          1          -    Covered              
+        bin one_wait                                     2188          1          -    Covered              
+        bin two_wait                                     2244          1          -    Covered              
+        bin three_wait                                   2304          1          -    Covered              
+    Coverpoint cp_ready_dir                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                        4462          1          -    Covered              
+        bin read                                         4460          1          -    Covered              
+    Cross cx_wait_x_dir                               100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <three_wait,read>                        1152          1          -    Covered              
+            bin <two_wait,read>                          1124          1          -    Covered              
+            bin <one_wait,read>                          1094          1          -    Covered              
+            bin <zero_wait,read>                         1090          1          -    Covered              
+            bin <three_wait,write>                       1152          1          -    Covered              
+            bin <two_wait,write>                         1120          1          -    Covered              
+            bin <one_wait,write>                         1094          1          -    Covered              
+            bin <zero_wait,write>                        1096          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/cross_cg                  100.00%        100          -    Covered              
+    covered/total bins:                                    52         52          -                      
+    missing/total bins:                                     0         52          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_addr_x                              100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin addr_zero                                      96          1          -    Covered              
+        bin addr_low                                     2360          1          -    Covered              
+        bin addr_mid                                     4072          1          -    Covered              
+        bin addr_high                                    2298          1          -    Covered              
+        bin addr_max                                       88          1          -    Covered              
+    Coverpoint cp_dir_x                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                        4462          1          -    Covered              
+        bin read                                         4460          1          -    Covered              
+    Coverpoint cp_err_x                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin no_error                                     8826          1          -    Covered              
+        bin error                                          96          1          -    Covered              
+    Coverpoint cp_strb_x                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin full_word                                    2054          1          -    Covered              
+        bin single_byte                                   840          1          -    Covered              
+        bin half_word                                     488          1          -    Covered              
+        bin three_byte                                    420          1          -    Covered              
+        default bin other_strb                            660                     -    Occurred             
+    Coverpoint cp_wdata_x                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin data_zero                                      26          1          -    Covered              
+        bin data_max                                       26          1          -    Covered              
+        default bin data_mid                             4410                     -    Occurred             
+    Cross cx_addr_dir                                 100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <addr_zero,read>                           44          1          -    Covered              
+            bin <addr_zero,write>                          52          1          -    Covered              
+            bin <addr_max,read>                            44          1          -    Covered              
+            bin <addr_high,read>                         1150          1          -    Covered              
+            bin <addr_mid,read>                          2038          1          -    Covered              
+            bin <addr_low,read>                          1180          1          -    Covered              
+            bin <addr_max,write>                           44          1          -    Covered              
+            bin <addr_high,write>                        1148          1          -    Covered              
+            bin <addr_mid,write>                         2034          1          -    Covered              
+            bin <addr_low,write>                         1180          1          -    Covered              
+    Cross cx_addr_err                                 100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <addr_zero,no_error>                       96          1          -    Covered              
+            bin <addr_max,no_error>                        88          1          -    Covered              
+            bin <addr_high,no_error>                     2298          1          -    Covered              
+            bin <addr_low,no_error>                      2360          1          -    Covered              
+            bin <addr_mid,no_error>                      4072          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin addr_err_not_max                     0                     -    ZERO                 
+            illegal_bin addr_max_error                      0                     -    ZERO                 
+    Cross cx_strb_addr                                100.00%        100          -    Covered              
+        covered/total bins:                                20         20          -                      
+        missing/total bins:                                 0         20          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <three_byte,addr_max>                       2          1          -    Covered              
+            bin <single_byte,addr_zero>                     2          1          -    Covered              
+            bin <half_word,addr_max>                        2          1          -    Covered              
+            bin <half_word,addr_zero>                       6          1          -    Covered              
+            bin <single_byte,addr_max>                      2          1          -    Covered              
+            bin <three_byte,addr_high>                    100          1          -    Covered              
+            bin <half_word,addr_high>                     106          1          -    Covered              
+            bin <single_byte,addr_high>                   204          1          -    Covered              
+            bin <three_byte,addr_mid>                     224          1          -    Covered              
+            bin <half_word,addr_mid>                      246          1          -    Covered              
+            bin <single_byte,addr_mid>                    394          1          -    Covered              
+            bin <three_byte,addr_low>                      90          1          -    Covered              
+            bin <half_word,addr_low>                      126          1          -    Covered              
+            bin <single_byte,addr_low>                    234          1          -    Covered              
+            bin <three_byte,addr_zero>                      6          1          -    Covered              
+            bin <full_word,addr_zero>                      32          1          -    Covered              
+            bin <full_word,addr_max>                       36          1          -    Covered              
+            bin <full_word,addr_high>                     576          1          -    Covered              
+            bin <full_word,addr_mid>                      842          1          -    Covered              
+            bin <full_word,addr_low>                      570          1          -    Covered              
+    Cross cx_dir_data                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <write,data_max>                           26          1          -    Covered              
+            bin <write,data_zero>                          26          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin no_read                              0                     -    ZERO                 
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /apb_pkg/apb_coverage/transaction_cg            100.00%        100          -    Covered              
+    covered/total bins:                                     8          8          -                      
+    missing/total bins:                                     0          8          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_dir                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                        4462          1          -    Covered              
+        bin read                                         4460          1          -    Covered              
+    Coverpoint cp_error                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin no_error                                     8826          1          -    Covered              
+        bin error                                          96          1          -    Covered              
+    Cross cx_dir_error                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <read,error>                               48          1          -    Covered              
+            bin <write,error>                              48          1          -    Covered              
+            bin <read,no_error>                          4412          1          -    Covered              
+            bin <write,no_error>                         4414          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/address_cg                100.00%        100          -    Covered              
+    covered/total bins:                                     5          5          -                      
+    missing/total bins:                                     0          5          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_addr                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin addr_zero                                      96          1          -    Covered              
+        bin addr_low                                     2360          1          -    Covered              
+        bin addr_mid                                     4072          1          -    Covered              
+        bin addr_high                                    2298          1          -    Covered              
+        bin addr_max                                       88          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/data_cg                   100.00%        100          -    Covered              
+    covered/total bins:                                    10         10          -                      
+    missing/total bins:                                     0         10          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_wdata                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin data_zero                                      26          1          -    Covered              
+        bin data_low                                      126          1          -    Covered              
+        bin data_mid                                        4          1          -    Covered              
+        bin data_high                                    4280          1          -    Covered              
+        bin data_max                                       26          1          -    Covered              
+    Coverpoint cp_rdata                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin data_zero                                     104          1          -    Covered              
+        bin data_low                                      220          1          -    Covered              
+        bin data_mid                                      260          1          -    Covered              
+        bin data_high                                    3854          1          -    Covered              
+        bin data_max                                       22          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/strobe_cg                 100.00%        100          -    Covered              
+    covered/total bins:                                     9          9          -                      
+    missing/total bins:                                     0          9          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_strb                                100.00%        100          -    Covered              
+        covered/total bins:                                 9          9          -                      
+        missing/total bins:                                 0          9          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin all_bytes                                    2054          1          -    Covered              
+        bin byte_0_only                                   206          1          -    Covered              
+        bin byte_1_only                                   220          1          -    Covered              
+        bin byte_2_only                                   196          1          -    Covered              
+        bin byte_3_only                                   218          1          -    Covered              
+        bin lower_half                                    198          1          -    Covered              
+        bin upper_half                                    290          1          -    Covered              
+        bin upper_3                                       210          1          -    Covered              
+        bin lower_3                                       210          1          -    Covered              
+        default bin others                                660                     -    Occurred             
+ TYPE /apb_pkg/apb_coverage/transition_cg             100.00%        100          -    Covered              
+    covered/total bins:                                     4          4          -                      
+    missing/total bins:                                     0          4          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_dir_trans                           100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/apb_pkg::apb_coverage::transition_cg  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     4          4          -                      
+    missing/total bins:                                     0          4          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_dir_trans                           100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write_then_read                              2432          1          -    Covered              
+        bin read_then_write                              2420          1          -    Covered              
+        bin write_then_write                             2026          1          -    Covered              
+        bin read_then_read                               2026          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/boundary_cg               100.00%        100          -    Covered              
+    covered/total bins:                                    28         28          -                      
+    missing/total bins:                                     0         28          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_addr_boundary                       100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin addr_first                                     96          1          -    Covered              
+        bin addr_second                                    76          1          -    Covered              
+        bin addr_secondlast                                88          1          -    Covered              
+        bin addr_last                                      96          1          -    Covered              
+        default bin addr_everything_else                 8566                     -    Occurred             
+    Coverpoint cp_dir_bnd                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                        4462          1          -    Covered              
+        bin read                                         4460          1          -    Covered              
+    Coverpoint cp_data_pattern                        100.00%        100          -    Covered              
+        covered/total bins:                                 9          9          -                      
+        missing/total bins:                                 0          9          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin all_zeros                                      26          1          -    Covered              
+        bin all_ones                                       26          1          -    Covered              
+        bin alt_a5                                         26          1          -    Covered              
+        bin alt_5a                                         26          1          -    Covered              
+        bin alt_aa                                          2          1          -    Covered              
+        bin alt_55                                          2          1          -    Covered              
+        bin first_1                                        24          1          -    Covered              
+        bin first_2                                        24          1          -    Covered              
+        bin first_4                                        24          1          -    Covered              
+        default bin other_pattern                        4282                     -    Occurred             
+    Coverpoint cp_strb_on_read                        100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin strb_zero_on_read                            4460          1          -    Covered              
+        default bin strb_nonzero_on_read                    0                     -    ZERO                 
+    Coverpoint cp_b2b_same_addr                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin same_addr_hit                                2770          1          -    Covered              
+        bin same_addr_miss                               6152          1          -    Covered              
+    Coverpoint cp_wr_rd_same_addr                     100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin wr_rd_same_hit                               2426          1          -    Covered              
+        bin wr_rd_same_miss                              6496          1          -    Covered              
+    Cross cx_boundary_x_dir                           100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <addr_first,read>                          44          1          -    Covered              
+            bin <addr_first,write>                         52          1          -    Covered              
+            bin <addr_last,read>                           48          1          -    Covered              
+            bin <addr_secondlast,read>                     44          1          -    Covered              
+            bin <addr_second,read>                         38          1          -    Covered              
+            bin <addr_last,write>                          48          1          -    Covered              
+            bin <addr_secondlast,write>                    44          1          -    Covered              
+            bin <addr_second,write>                        38          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/waitstate_cg              100.00%        100          -    Covered              
+    covered/total bins:                                    14         14          -                      
+    missing/total bins:                                     0         14          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_wait_states                         100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero_wait                                    2186          1          -    Covered              
+        bin one_wait                                     2188          1          -    Covered              
+        bin two_wait                                     2244          1          -    Covered              
+        bin three_wait                                   2304          1          -    Covered              
+    Coverpoint cp_ready_dir                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                        4462          1          -    Covered              
+        bin read                                         4460          1          -    Covered              
+    Cross cx_wait_x_dir                               100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <three_wait,read>                        1152          1          -    Covered              
+            bin <two_wait,read>                          1124          1          -    Covered              
+            bin <one_wait,read>                          1094          1          -    Covered              
+            bin <zero_wait,read>                         1090          1          -    Covered              
+            bin <three_wait,write>                       1152          1          -    Covered              
+            bin <two_wait,write>                         1120          1          -    Covered              
+            bin <one_wait,write>                         1094          1          -    Covered              
+            bin <zero_wait,write>                        1096          1          -    Covered              
+ TYPE /apb_pkg/apb_coverage/cross_cg                  100.00%        100          -    Covered              
+    covered/total bins:                                    52         52          -                      
+    missing/total bins:                                     0         52          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_addr_x                              100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin addr_zero                                      96          1          -    Covered              
+        bin addr_low                                     2360          1          -    Covered              
+        bin addr_mid                                     4072          1          -    Covered              
+        bin addr_high                                    2298          1          -    Covered              
+        bin addr_max                                       88          1          -    Covered              
+    Coverpoint cp_dir_x                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write                                        4462          1          -    Covered              
+        bin read                                         4460          1          -    Covered              
+    Coverpoint cp_err_x                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin no_error                                     8826          1          -    Covered              
+        bin error                                          96          1          -    Covered              
+    Coverpoint cp_strb_x                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin full_word                                    2054          1          -    Covered              
+        bin single_byte                                   840          1          -    Covered              
+        bin half_word                                     488          1          -    Covered              
+        bin three_byte                                    420          1          -    Covered              
+        default bin other_strb                            660                     -    Occurred             
+    Coverpoint cp_wdata_x                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin data_zero                                      26          1          -    Covered              
+        bin data_max                                       26          1          -    Covered              
+        default bin data_mid                             4410                     -    Occurred             
+    Cross cx_addr_dir                                 100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <addr_zero,read>                           44          1          -    Covered              
+            bin <addr_zero,write>                          52          1          -    Covered              
+            bin <addr_max,read>                            44          1          -    Covered              
+            bin <addr_high,read>                         1150          1          -    Covered              
+            bin <addr_mid,read>                          2038          1          -    Covered              
+            bin <addr_low,read>                          1180          1          -    Covered              
+            bin <addr_max,write>                           44          1          -    Covered              
+            bin <addr_high,write>                        1148          1          -    Covered              
+            bin <addr_mid,write>                         2034          1          -    Covered              
+            bin <addr_low,write>                         1180          1          -    Covered              
+    Cross cx_addr_err                                 100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <addr_zero,no_error>                       96          1          -    Covered              
+            bin <addr_max,no_error>                        88          1          -    Covered              
+            bin <addr_high,no_error>                     2298          1          -    Covered              
+            bin <addr_low,no_error>                      2360          1          -    Covered              
+            bin <addr_mid,no_error>                      4072          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin addr_err_not_max                     0                     -    ZERO                 
+            illegal_bin addr_max_error                      0                     -    ZERO                 
+    Cross cx_strb_addr                                100.00%        100          -    Covered              
+        covered/total bins:                                20         20          -                      
+        missing/total bins:                                 0         20          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <three_byte,addr_max>                       2          1          -    Covered              
+            bin <single_byte,addr_zero>                     2          1          -    Covered              
+            bin <half_word,addr_max>                        2          1          -    Covered              
+            bin <half_word,addr_zero>                       6          1          -    Covered              
+            bin <single_byte,addr_max>                      2          1          -    Covered              
+            bin <three_byte,addr_high>                    100          1          -    Covered              
+            bin <half_word,addr_high>                     106          1          -    Covered              
+            bin <single_byte,addr_high>                   204          1          -    Covered              
+            bin <three_byte,addr_mid>                     224          1          -    Covered              
+            bin <half_word,addr_mid>                      246          1          -    Covered              
+            bin <single_byte,addr_mid>                    394          1          -    Covered              
+            bin <three_byte,addr_low>                      90          1          -    Covered              
+            bin <half_word,addr_low>                      126          1          -    Covered              
+            bin <single_byte,addr_low>                    234          1          -    Covered              
+            bin <three_byte,addr_zero>                      6          1          -    Covered              
+            bin <full_word,addr_zero>                      32          1          -    Covered              
+            bin <full_word,addr_max>                       36          1          -    Covered              
+            bin <full_word,addr_high>                     576          1          -    Covered              
+            bin <full_word,addr_mid>                      842          1          -    Covered              
+            bin <full_word,addr_low>                      570          1          -    Covered              
+    Cross cx_dir_data                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <write,data_max>                           26          1          -    Covered              
+            bin <write,data_zero>                          26          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin no_read                              0                     -    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 8
+
+Total Coverage By Instance (filtered view): 100.00%
+
